@@ -15,20 +15,20 @@ import org.springframework.web.servlet.view.RedirectView;
 
 @Controller
 public class RootController {
-    @Autowired
-    private ClientService clientService;
-
-    @Autowired
-    private EmployeeService employeeService;
-
-    @Autowired
-    private DocumentService documentService;
 
     @GetMapping("/")
     public String getRootRequest(Model model) {
         model.addAttribute("pageTitle1", "Library");
         model.addAttribute("h1Text", "Java Town Library");
-        return "index";
+        return "index";    @Autowired
+        private ClientService clientService;
+
+        @Autowired
+        private EmployeeService employeeService;
+
+        @Autowired
+        private DocumentService documentService;
+
     }
 
     @GetMapping("/Client")
