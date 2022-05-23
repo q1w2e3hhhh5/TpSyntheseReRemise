@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Creator</title>
+</head>
+<body>
+
+<h1> Create DVD </h1>
+<form action="#" th:action="@{/DvdCreate}" th:object="${dvd}" method="post">
+    <input type="hidden" th:field="*{id}"/>
+    <table border="1">
+        <tr>
+            <td><label>Titre</label></td>
+            <td><input type="text" th:field="*{title}" /></td>
+        </tr>
+        <tr>
+            <td><label>Année de publication</label></td>
+            <td><input type="number" th:field="*{publicationYear}" /></td>
+        </tr>
+        <tr>
+            <td><label>Auteur</label></td>
+            <td><input type="text" th:field="*{author}" /></td>
+        </tr>
+        <tr>
+            <td><label>Editeur</label></td>
+            <td><input type="text" th:field="*{editor}" /></td>
+        </tr>
+        <tr>
+            <td><label>Categorie</label></td>
+            <td><input type="text" th:field="*{category}" /></td>
+        </tr>
+        <tr>
+            <td><label>Quantité</label></td>
+            <td><input type="number" th:field="*{quantity}" /></td>
+        </tr>
+        <tr>
+            <td><label>Durée</label></td>
+            <td><input type="number" th:field="*{timeLength}" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Sauve" /></td>
+        </tr>
+    </table>
+</form>
+
+
+
+<h1> Create CD </h1>
+<form action="#" th:action="@{/CdCreate}" th:object="${cd}" method="post">
+    <input type="hidden" th:field="*{id}"/>
+    <table border="1">
+        <tr>
+            <td><label>Titre</label></td>
+            <td><input type="text" th:field="*{title}" /></td>
+        </tr>
+        <tr>
+            <td><label>Année de publication</label></td>
+            <td><input type="number" th:field="*{publicationYear}" /></td>
+        </tr>
+        <tr>
+            <td><label>Auteur</label></td>
+            <td><input type="text" th:field="*{author}" /></td>
+        </tr>
+        <tr>
+            <td><label>Editeur</label></td>
+            <td><input type="text" th:field="*{editor}" /></td>
+        </tr>
+        <tr>
+            <td><label>Categorie</label></td>
+            <td><input type="text" th:field="*{category}" /></td>
+        </tr>
+        <tr>
+            <td><label>Quantité</label></td>
+            <td><input type="number" th:field="*{quantity}" /></td>
+        </tr>
+        <tr>
+            <td><label>Durée</label></td>
+            <td><input type="number" th:field="*{timeLength}" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Sauve" /></td>
+        </tr>
+    </table>
+</form>
+
+
+
+<h1> Create Book </h1>
+<form action="#" th:action="@{/BookCreate}" th:object="${book}" method="post">
+    <input type="hidden" th:field="*{id}"/>
+    <table border="1">
+        <tr>
+            <td><label>Titre</label></td>
+            <td><input type="text" th:field="*{title}" /></td>
+        </tr>
+        <tr>
+            <td><label>Année de publication</label></td>
+            <td><input type="number" th:field="*{publicationYear}" /></td>
+        </tr>
+        <tr>
+            <td><label>Auteur</label></td>
+            <td><input type="text" th:field="*{author}" /></td>
+        </tr>
+        <tr>
+            <td><label>Editeur</label></td>
+            <td><input type="text" th:field="*{editor}" /></td>
+        </tr>
+        <tr>
+            <td><label>Type de document</label></td>
+            <td><input type="text" th:field="*{documentType}" /></td>
+        </tr>
+        <tr>
+            <td><label>Categorie</label></td>
+            <td><input type="number" th:field="*{category}" /></td>
+        </tr>
+        <tr>
+            <td><label>Nombre de page</label></td>
+            <td><input type="number" th:field="*{nbPages}" /></td>
+        </tr>
+        <tr>
+            <td><label>Quantité</label></td>
+            <td><input type="number" th:field="*{quantity}" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Sauve" /></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

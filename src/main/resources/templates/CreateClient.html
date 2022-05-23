@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Creator</title>
+</head>
+<body>
+<h1> Create Client </h1>
+<form action="#" th:action="@{/CreateClient}" th:object="${client}" method="post">
+    <input type="hidden" th:field="*{id}"/>
+    <table border="1">
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="text" th:field="*{email}" /></td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="number" th:field="*{password}" /></td>
+        </tr>
+        <tr>
+            <td><label>Full name</label></td>
+            <td><input type="text" th:field="*{fullName}" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Sauve" /></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

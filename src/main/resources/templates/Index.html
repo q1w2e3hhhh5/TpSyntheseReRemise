@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+<h1 th:text="${h1Text}">Page index</h1>
+<div>
+    <a th:href="@{'/Client'}">Liste de tout les clients</a>
+</div>
+<div>
+    <a th:href="@{'/Documents'}">Liste de tout les document</a>
+</div>
+<div>
+    <a th:href="@{'/CreateDocument'}">Crée document</a>
+</div>
+<div>
+    <a th:href="@{'/CreateClient'}">Crée client</a>
+</div>
+</body>
+</html>

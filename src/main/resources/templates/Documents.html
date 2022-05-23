@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <th>Titre</th>
+    <th>Année de Publication</th>
+    <th>Auteur</th>
+    <th>Editeur</th>
+    <th>Category</th>
+    <th>Type de document</th>
+    <th>Periode d'emprunt</th>
+    <th>Quantité</th>
+    </thead>
+    <tbody>
+    <th:block th:each="document, stat : ${documents}">
+        <tr>
+            <td th:text="${document.getTitle()}"></td>
+            <td th:text="${document.getPublicationYear()}"></td>
+            <td th:text="${document.getAuthor()}"></td>
+            <td th:text="${document.getEditor()}"></td>
+            <td th:text="${document.getCategory()}"></td>
+            <td th:text="${document.getDocumentType()}"></td>
+            <td th:text="${document.getBorrowTimePeriod()}"></td>
+            <td th:text="${document.getQuantity()}"></td>
+        </tr>
+    </th:block>
+    </tbody>
+</table>
+</body>
+</html>
